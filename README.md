@@ -1,7 +1,7 @@
 # ET-NWChem
 Computing electron transfer matrix element (H_ab) using Generalized Mulliken−Hush (GMH) NWChem.
 
-tddft_analysis.F has been being modified to compute electron transfer matrix element using GMH method based on following formula.
+Herein, tddft module has been being modified to compute electron transfer matrix element using GMH method based on following formula.
 
 ```
                 (Ej - Ei) * muij
