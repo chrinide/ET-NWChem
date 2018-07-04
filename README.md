@@ -5,8 +5,8 @@ Herein, tddft module has been being modified to compute electron transfer matrix
 
 ```
                 (Ej - Ei) * muij
-GMH = ----------------------------------
-         ------------------------------
+GMH = ------------------------------------
+         _______________________________
        \/ (muii - mujj)**2 + 4*(muij**2)
 ```
 
