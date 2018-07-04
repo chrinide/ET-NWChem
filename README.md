@@ -33,4 +33,4 @@ make link -j4
 echo "Done"
 ```
 
-ref: [recompile-nwchem.sh]
+ref: [recompile-nwchem.sh](recompile-nwchem.sh)
