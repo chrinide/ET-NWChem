@@ -9,4 +9,4 @@ GMH = ----------------------------------
        \/ (muii - mujj)**2 + 4*(muij**2)
 ```
 
-Original source code of tddft module of NWChem was written by So Hirata.
+Original source code of tddft module (all tddft_\*.F) of NWChem was written by So Hirata.
