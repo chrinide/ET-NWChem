@@ -32,3 +32,5 @@ cd $NWCHEM_TOP/src
 make link -j4
 echo "Done"
 ```
+
+ref: [recompile-nwchem.sh]
