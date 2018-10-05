@@ -11,16 +11,20 @@ GMH = ------------------------------------
        \/ (muii - mujj)**2 + 4*(muij**2)
 ```
 
-Original source code of Time-Dependent Density Functional Theory (all tddft_\*.F) of NWChem software was written by Prof. So Hirata.
-
-A GMH approach is being modified by Rangsiman Ketkaew.
-
-The latest version of riting this document if NWChem 6.8.1, which is released as open-source under the ECL 2.0 license.
+where Ei and Ej are energy for each pair of ground state and excited state, muii, mujj, muij is transition dipole moment for different species.
 
 ### Useful link
- - Doxygen for NWChem documenting:
+ - [Doxygen for NWChem documenting](http://www.doxygen.nl/)
  - [Generalization of the Mulliken-Hush treatment for the calculation of electron transfer matrix elements Author links open overlay panel by Robert J.Cave et al.](https://www.sciencedirect.com/science/article/abs/pii/0009261495013105)
  - [Computational Methods For Electronic Couplings by Chao-Ping Hsu, Academia Sinica](http://www.q-chem.com/tutorial/Cherri_Hsu_Electronic_Coupling.pdf)
+
+### Disclaimers
+
+Original source code of Time-Dependent Density Functional Theory (all tddft_\*.F) of NWChem software was written by Prof. So Hirata.
+
+A GMH approach is being modified by Rangsiman Ketkaew. I am not resposible for any damage caused through use of all product here.
+
+The latest version of riting this document if NWChem 6.8.1, which is released as open-source under the ECL 2.0 license.
 
 # Recompile NWChem without full compilation
 
