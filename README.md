@@ -11,7 +11,7 @@ GMH = ------------------------------------
        \/ (muii - mujj)**2 + 4*(muij**2)
 ```
 
-where Ei and Ej are energy for each pair of ground state and excited state, muii, mujj, and muij are transition dipole moment for different species.
+where Ei and Ej are energy for each pair of ground state and excited state, and muii, mujj, and muij are transition dipole moment for different species.
 
 ### Useful link
  - [Doxygen for NWChem documenting](http://www.doxygen.nl/)
