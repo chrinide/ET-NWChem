@@ -48,6 +48,6 @@ echo "Done"
 ref: [recompile-nwchem.sh](recompile-nwchem.sh)
 
 # Acknowledgements
-I thank Prof. Chao-Ping Hsu, Academia Sinica, Taipei, Taiwan for sugggesting GMH approach. I also thank Edoardo Apra, NWChem developer at PNNL, USA for useful comments on NWChem code modification.
+I thank Prof. Chao-Ping Hsu, Academia Sinica, Taipei, Taiwan for suggestion on GMH method. I also thank Edoardo Apra, NWChem developer at PNNL, USA for useful comments on NWChem code modification.
 
 
