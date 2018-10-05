@@ -11,7 +11,7 @@ GMH = ------------------------------------
        \/ (muii - mujj)**2 + 4*(muij**2)
 ```
 
-where Ei and Ej are energy for each pair of ground state and excited state, muii, mujj, muij is transition dipole moment for different species.
+where Ei and Ej are energy for each pair of ground state and excited state, muii, mujj, and muij are transition dipole moment for different species.
 
 ### Useful link
  - [Doxygen for NWChem documenting](http://www.doxygen.nl/)
@@ -20,11 +20,9 @@ where Ei and Ej are energy for each pair of ground state and excited state, muii
 
 ### Disclaimers
 
-Original source code of Time-Dependent Density Functional Theory (all tddft_\*.F) of NWChem software was written by Prof. So Hirata.
+A GMH approach I implemented and modified is based on original source code of Time-Dependent Density Functional Theory (all tddft_\*.F) of NWChem software was written by Prof. So Hirata. I am not responsible for any damage caused through use of all products here.
 
-A GMH approach is being modified by Rangsiman Ketkaew. I am not resposible for any damage caused through use of all product here.
-
-The latest version of riting this document if NWChem 6.8.1, which is released as open-source under the ECL 2.0 license.
+The latest version of writing this document is NWChem 6.8.1, which is released as open-source under the ECL 2.0 license.
 
 # Recompile NWChem without full compilation
 
