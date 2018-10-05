@@ -28,24 +28,30 @@ The latest version of writing this document is NWChem 6.8.1, which is released a
 
 I strongly suggest you to compile NWChem wihtout using my experimentally modified source code of GMH first, if original NWChem is compile successfully (testing results are acceptable), then you can go further with my work.
 
-Step 1. Go to folder where source code is modified.
+Step 1. Download modified source code to $NWCHEM_TOP/src/nwdft/lr_tddft direcotry.
+
+Step 2. Go to folder where source code is modified.
 
 ```
 cd $NWCHEM_TOP/src/nwdft/lr_tddft
 ```
 
-Step 2. Export env var as first time NWChem was compile.
+Step 3. Setting up environmental variable as if first time you compile NWChem.
 
 ```
 export USE_64TO32=y
 cd $NWCHEM_TOP/src/nwdft/lr_tddft
-make -j4
+make
 cd $NWCHEM_TOP/src
-make link -j4
+make link
 echo "Done"
 ```
 
-ref: [recompile-nwchem.sh](recompile-nwchem.sh)
+Example script can be obtained: [recompile-nwchem.sh](recompile-nwchem.sh).
+
+Step 4. A new NWChem executable *nwchem* will replace the old one.
+
+
 
 # Acknowledgements
 I thank Prof. Chao-Ping Hsu, Academia Sinica, Taipei, Taiwan for suggestion on GMH method. I also thank Edoardo Apra, NWChem developer at PNNL, USA for useful comments on NWChem code modification.
