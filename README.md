@@ -1,4 +1,4 @@
-# Geenralized Mulliken-Hush Analysis of Electron Transfer Calculation in NWChem
+# Generalized Mulliken-Hush Analysis of Electron Transfer Calculation in NWChem
 
 Computing electron transfer matrix element (H_ab) or electron transfer integral using a Generalized Mulliken−Hush (GMH) in NWChem program.
 
