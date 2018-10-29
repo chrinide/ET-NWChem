@@ -1,6 +1,6 @@
 # Generalized Mulliken-Hush Analysis of Electron Transfer Calculation in NWChem
 
-Computing electron transfer matrix element (H_ab) or electron transfer integral using a Generalized Mulliken−Hush (GMH) in NWChem program.
+Computing electron transfer matrix element or electron transfer integral (H<sub>ab</sub>) using a Generalized Mulliken−Hush (GMH) in NWChem program.
 
 Herein, tddft module has been being modified to compute electron transfer matrix element using GMH method based on following formula.
 
@@ -20,15 +20,21 @@ where Ei and Ej are energy for each pair of ground state and excited state, and 
 
 ### Disclaimers
 
-A GMH approach I implemented and modified is based on original source code of Time-Dependent Density Functional Theory (all tddft_\*.F) of NWChem software was written by Prof. So Hirata. I am not responsible for any damage caused through use of all products here.
+This GMH approach is experimentally modified based on original source codes of Time-Dependent Density Functional Theory (all tddft_\*.F files) of NWChem software which were written by Prof. So Hirata. I am not responsible for any damage caused through use of all products here.
 
 The latest version of writing this document is NWChem 6.8.1, which is released as open-source under the ECL 2.0 license.
 
 # Recompile NWChem without full compilation
 
-I strongly suggest you to compile NWChem wihtout using my experimentally modified source code of GMH first, if original NWChem is compile successfully (testing results are acceptable), then you can go further with my work.
+First, I strongly suggest you to compile NWChem with full packages. Then you can recompile NWChem with my modified GMH source code. Please following the steps below for a successful recompilation of your NWChem integrated with my modified GMH module.
 
-Step 1. Download modified source code to $NWCHEM_TOP/src/nwdft/lr_tddft direcotry.
+Step 1. Replace TD-DFT source code with a modified GMH source code (you should backup all original source codes as well.)
+
+```
+$NWCHEM_TOP/src/nwdft/lr_tddft
+```
+
+where $NWCHEM is set to NWChem top directory.
 
 Step 2. Go to folder where source code is modified.
 
@@ -36,7 +42,7 @@ Step 2. Go to folder where source code is modified.
 cd $NWCHEM_TOP/src/nwdft/lr_tddft
 ```
 
-Step 3. Setting up environmental variable as if first time you compile NWChem.
+Step 3. Setting up environmental variable as if first time you compile NWChem. The following is a portion of NWChem compile bash script.
 
 ```
 export USE_64TO32=y
@@ -47,11 +53,9 @@ make link
 echo "Done"
 ```
 
-Example script can be obtained: [recompile-nwchem.sh](recompile-nwchem.sh).
+Example bash script can be obtained: [recompile-nwchem.sh](recompile-nwchem.sh).
 
 Step 4. A new NWChem executable *nwchem* will replace the old one.
-
-
 
 # Acknowledgements
 I thank Prof. Chao-Ping Hsu, Academia Sinica, Taipei, Taiwan for suggestion on GMH method. I also thank Edoardo Apra, NWChem developer at PNNL, USA for useful comments on NWChem code modification.
